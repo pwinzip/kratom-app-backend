@@ -119,11 +119,11 @@ class FarmerController extends Controller
                 $remain = $plants['remain_plant'];
             }
             $newarr = [
-            "farmer_id" => $farmer['id'],
-            "user_id" => $u['id'],
-            "name" => $u['name'],
-            "ent_name" => $enterprise['enterprise_name'],
-            "remain" => $remain,
+                "farmer_id" => $farmer['id'],
+                "user_id" => $u['id'],
+                "name" => $u['name'],
+                "ent_name" => $enterprise['enterprise_name'],
+                "remain" => $remain,
             ];
             array_push($user_arr, $newarr);
         }

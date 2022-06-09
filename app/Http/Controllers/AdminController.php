@@ -47,7 +47,6 @@ class AdminController extends Controller
         // $auth = $request->user();
         // if ($auth->tokenCan("0")) {
             $agents = User::where('role', 1)
-                        ->where('is_active', 1)
                         ->count();
             $data = [
                 'num' => $agents,

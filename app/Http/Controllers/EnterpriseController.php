@@ -114,19 +114,18 @@ class EnterpriseController extends Controller
                     $remain = $m['received_amount']; 
                 }
                 $new_arr = [
-                "id" => $m->id,
-                "address" => $m->address,
-                "area" => $m->area,
-                "lat" => $m->lat,
-                "long" => $m->long,
-                "userid" => $user->id,
-                "name" => $user->name,
-                "tel" => $user->tel,
-                "remain" => $remain,
-                "created_at" => $user->created_at,
-            ];
-            array_push($users, $new_arr);
-
+                    "id" => $m->id,
+                    "address" => $m->address,
+                    "area" => $m->area,
+                    "lat" => $m->lat,
+                    "long" => $m->long,
+                    "userid" => $user->id,
+                    "name" => $user->name,
+                    "tel" => $user->tel,
+                    "remain" => $remain,
+                    "created_at" => $user->created_at,
+                ];
+                array_push($users, $new_arr);
             }
 
             $data = [
